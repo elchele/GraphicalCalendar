@@ -13,7 +13,7 @@ A dashlet named "My Calendar" should now be present in the list of available das
 # Features:
 1. Automatically displays scheduled calls or meetings for currently logged in user.
 2. Dashlet settings allow user to choose activity types to display.
-3. Can be displayed in Home page, ListView or RecordView Intelligence Panel.
+3. Can be displayed in Home page, ListView or RecordView Intelligence Panel (all modules).
 
 # In progress:
 1. Allow scheduling via click on Calendar time slot.
