@@ -1,5 +1,5 @@
 # GraphicalCalendar
-Graphical Calendar Dashlet for Sugar 7.6+, based off of Fullcalendar jQuery Plug-in.
+Graphical Calendar Dashlet for Sugar 7.6+, based off of Fullcalendar jQuery Plug-in (http://fullcalendar.io).
 
 # Designed for Sugar 7.6+ (Pro/Ent/Ult)
 # Install instructions:
