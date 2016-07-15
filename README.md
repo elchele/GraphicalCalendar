@@ -1,4 +1,4 @@
-# GraphicalCalendar
+# Graphical Calendar Dashlet
 Graphical Calendar Dashlet for Sugar 7.6+, based off of Fullcalendar jQuery Plug-in (http://fullcalendar.io).
 
 # Designed for Sugar 7.6+ (Pro/Ent/Ult)
@@ -13,6 +13,7 @@ A dashlet named "My Calendar" should now be present in the list of available das
 # Features:
 1. Automatically displays scheduled calls or meetings for currently logged in user.
 2. Dashlet settings allow user to choose activity types to display.
+3. Can be displayed in Home page, ListView or RecordView Intelligence Panel.
 
 # In progress:
 1. Allow scheduling via click on Calendar time slot.
