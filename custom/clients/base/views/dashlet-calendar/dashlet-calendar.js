@@ -66,7 +66,7 @@
 				start: calEvent.get('date_start'),
 				color: color,
 				allDay: false,
-				url: '#bwc/index.php?action=DetailView&module=' + module + '&record=' + calEvent.id
+				url: '#' + module + '/' + calEvent.id
 			};
 		});
 		
@@ -91,45 +91,16 @@
 				},
 				*/
 				dayClick: function(date, jsEvent, view){
-					/*
-					var tz = app.user.getPreference('timezone'),
-						tzo = app.user.getPreference('tz_offset');
+					var tzo = app.user.getPreference('tz_offset'),
+						dateTimeFormat = app.user.getPreference('datepref') + ' ' + app.user.getPreference('timepref'),
+						date_start_date = date.format() + tzo,
+						defaults = {date_start: date_start_date};
 					
-					date.utcOffset(tzo);
-					date.zone = tz;
-					*/
-					
-					var dateTimeFormat = app.user.getPreference('datepref') + ' ' + app.user.getPreference('timepref'),
-						start = (parseInt(date.get('Month')) + 1) + '/' + date.get('Date') + '/' + date.get('Year'),
-						h = parseInt(date.get('hours')),
-						m = parseInt(date.get('minutes')),
-						mer = 'pm';
-					
-					if (h < 12)
-					{
-						mer = 'am';
-					}
-
-					if (h > 12)
-					{
-						h = h - 12;
-					}
-					
-					if (h < 10)
-					{
-						h = '0' + h;
-					} 
-		
-					start += ' ' + h + ':' + m + ':00' + mer;
-					start = encodeURIComponent(start);
-					
-					//var addURL = '#bwc/index.php?module=Calls&action=EditView&date_start=' + start;
-					//app.router.navigate(addURL, {trigger: true});
 					app.drawer.open({
 						layout: 'create',
 						context:{
 							create:true,
-							model:app.data.createBean('Meetings'),
+							model:app.data.createBean('Meetings', defaults),
 							module: 'Meetings'
 						}
 					});
