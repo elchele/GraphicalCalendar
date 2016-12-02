@@ -8,7 +8,7 @@ Graphical Calendar Dashlet for Sugar 7.6+, based off of Fullcalendar jQuery Plug
 2. Access Sugar as an Admin level user.
 3. Execute a Quick Repair and Rebuild operation via Admin > Repair.
 
-A dashlet named "My Calendar" should now be present in the list of available dashlets throughout the application.
+A dashlet named "My Graphical Calendar" should now be present in the list of available dashlets throughout the application.
 
 # Features:
 1. Automatically displays scheduled calls and/or meetings for currently logged in user.
