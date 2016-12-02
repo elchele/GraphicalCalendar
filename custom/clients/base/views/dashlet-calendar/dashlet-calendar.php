@@ -11,8 +11,8 @@
 $viewdefs['base']['view']['dashlet-calendar'] = array(
     'dashlets' => array(
         array(
-            'label' => 'My Calendar',
-            'description' => 'Graphical Daily Calendar',
+            'label' => 'LBL_CAL_DASHLET',
+            'description' => 'LBL_CAL_DASHLET_DESC',
             'config' => array(
             	'activity' => 'Calls',
             ),
